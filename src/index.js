@@ -11,16 +11,16 @@ const server = http.createServer((req, res) => {
 
   switch (url) {
     case "/":
-      filePath = "./index.html";
+      filePath = "./src/index.html";
       break;
     case "/about":
-      filePath = "./pages/about.html";
+      filePath = "./src/pages/about.html";
       break;
     case "/contact-me":
-      filePath = "./pages/contact-me.html";
+      filePath = "./src/pages/contact-me.html";
       break;
     default:
-      filePath = "./pages/404.html";
+      filePath = "./src/pages/404.html";
       break;
   }
 

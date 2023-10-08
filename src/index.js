@@ -39,6 +39,6 @@ const server = http.createServer((req, res) => {
   asyncReadFile(res, filePath);
 });
 
-server.listen(port, () => {
+server.listen(port, hostname, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });

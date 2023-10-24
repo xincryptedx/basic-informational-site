@@ -11,5 +11,8 @@
     "url": "github.com/xincryptedx/basic-informational-site"
   },
   "author": "xincryptedx joshua.r.barnhart@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }

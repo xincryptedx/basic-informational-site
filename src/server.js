@@ -1,4 +1,4 @@
-const http = require("http");
+/* const http = require("http");
 const fs = require("fs/promises");
 
 const hostname = "127.0.0.1";
@@ -42,3 +42,19 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
+ */
+
+const express = require("express");
+const app = express();
+const path = require("path");
+
+const port = 8080;
+
+// Middleware that serves static files
+app.use(express.static(path.join(__dirname, "public", "html")));
+
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
+});
+
+console.log("Static file directory: " + path.join(__dirname, "public", "html"));

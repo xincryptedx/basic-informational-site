@@ -22,5 +22,3 @@ const port = 8080;
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 });
-
-console.log("Static file directory: " + path.join(__dirname, "public", "html"));
